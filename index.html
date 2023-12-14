@@ -19770,7 +19770,7 @@
                                 </div>
                             </div>
                             <audio controls autoplay loop>
-                                <source src="./Taylor-Swift---Love-Story(musicdownload.cc).mp3" type="audio/mp3">
+                                <source src="./Taylor-Swift---Love-Story(musicdownload.cc).mp3" id="backgroundMusic" type="audio/mp3">
                                 Your browser does not support the audio element.
                             </audio>
                             <div id="KIJkAvxgdFvtLMgG" style="z-index:68;">
@@ -23381,6 +23381,17 @@
             nonce="fcdfae1e-ae90-49c1-b2ee-4a98c4f0ed36"></script>
         <script src="js/4ce306f0cbabf255af378980048c545faebc3b80121b4a0470ae4fdbb65a59e7.js" async=""
             nonce="fcdfae1e-ae90-49c1-b2ee-4a98c4f0ed36"></script>
+
+            <script>
+                // Function to play background music
+                function playBackgroundMusic() {
+                    var audio = document.getElementById('backgroundMusic');
+                    audio.play();
+                }
+
+                // Play background music when the page is reloaded
+                window.addEventListener('load', playBackgroundMusic);
+            </script>
     </div>
 </body>
 
